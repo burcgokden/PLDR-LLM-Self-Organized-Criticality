@@ -36,7 +36,7 @@ class plgMultiHeadAttention(nn.Module):
         self.wk = nn.Linear(d_model, d_model, bias=True, device=self.device)
         self.wk.apply(weights_init)
         self.wv = nn.Linear(d_model, d_model, bias=True, device=self.device)
-        self.wk.apply(weights_init)
+        self.wv.apply(weights_init)
 
         self.plgatt_layer= plgatt.plga_layer(F_hidden=self.depth,
                                              Gcache=self.Gcache,
