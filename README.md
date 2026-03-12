@@ -1,7 +1,7 @@
 ## PLDR-LLMs Reason At Self-Organized Criticality
 
 This repository is the pytorch implementation of Large Language Model From Power Law Decoder Representations (PLDR-LLM) with KV-cache and G-cache used for experiments in the research article: 
-[PLDR-LLMs Reason At Self-Organized Criticality](./pldrllm-self-organized-criticality.pdf).
+[PLDR-LLMs Reason At Self-Organized Criticality](https://openreview.net/pdf?id=25KScNSmnl).
 
 PLDR-LLMs show reasoning when trained under conditions that lead to self-organized criticality. Their reasoning capabilities can be fully characterized through their deductive outputs without need for curated benchmark datasets.
 
@@ -19,7 +19,7 @@ The output and training procedure of PLDR-LLM is similar to LLMs that utilize de
 
 ### How to reach pretrained PLDR-LLMs with KV-cache and G-cache:
 
-- The PLDR-LLMs that were pretrained and studied in the research paper titled ["PLDR-LLMs Reason At Self-Organized Criticality"](./pldrllm-self-organized-criticality.pdf) can be found at [huggingface.co/fromthesky](https://huggingface.co/fromthesky).
+- The PLDR-LLMs that were pretrained and studied in the research paper titled ["PLDR-LLMs Reason At Self-Organized Criticality"](https://openreview.net/pdf?id=25KScNSmnl) can be found at [huggingface.co/fromthesky](https://huggingface.co/fromthesky).
 - Huggingface Transformers library custom model support is available and pretrained PLDR-LLM models can be used as any Huggingface model. Plase see available models at [huggingface.co/fromthesky](https://huggingface.co/fromthesky).
 - A fork of the LM Evaluation Harness Suite with PLDR-LLM support with Pytorch is available at  
 [lm-evaluation-harness-with-PLDR-LLM-kvg-cache](https://github.com/burcgokden/lm-evaluation-harness-with-PLDR-LLM-kvg-cache).
@@ -230,4 +230,16 @@ torch.stack([t[4][0] for t in att_weigths])
 Output of the residual network **A** (# decoder layers, # attention heads, $d_k$, $d_k$):
 ```python
 torch.stack([t[-1][0] for t in kvcache_lst])
+```
+#### Citation:
+
+Please cite this work as:
+```bibtex
+@misc{gokden2026pldrllmsoc,
+      title={PLDR-LLMs Reason at Self-Organized Criticality}, 
+      author={Burc Gokden},
+      year={2026},
+      note={OpenReview},
+      url={https://openreview.net/pdf?id=25KScNSmnl} 
+}
 ```
