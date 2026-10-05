@@ -1,3 +1,13 @@
+## Repository status: archived research reference
+
+This repository is archived and read-only to preserve its role as a reference implementation for the associated research paper and subsequent papers and manuscripts that build on this work.
+
+Preserving the code and documentation provides a stable reference for examining the published methods, reproducing experiments, and comparing later developments with this implementation.
+
+No further updates are planned for this repository. Its contents remain publicly available for study and reuse under the existing license. Further development and adaptations can be carried out in separate forks.
+
+When using this implementation in research, please cite the associated paper and record the specific repository commit used.
+
 ## PLDR-LLMs Reason At Self-Organized Criticality
 
 This repository is the pytorch implementation of Large Language Model From Power Law Decoder Representations (PLDR-LLM) with KV-cache and G-cache used for experiments in the research article: 
@@ -15,7 +25,7 @@ The PLDR-LLM with KV-cache and G-cache support was implemented with Pytorch. For
 
 The output and training procedure of PLDR-LLM is similar to LLMs that utilize decoders with SDPA. The inductive output is same as the transductive output of an LLM with SDPA. At inference time, it is straightforward to replace an LLM with SDPA with PLDR-LLM.
 
-***Note**: This repository is going to be updated for PLDR-LLM Pytorch support going forward. It is same as the repository for [PLDR-LLM-with-KVG-cache](https://github.com/burcgokden/PLDR-LLM-with-KVG-cache) except for the minor update that Value vector linear layer initialization is same as Query and Key vector linear layer initializations (Glorot Uniform, updated on 02/25/2026).*
+***Note**: This repository is the same as the repository for [PLDR-LLM-with-KVG-cache](https://github.com/burcgokden/PLDR-LLM-with-KVG-cache) except for the minor update that Value vector linear layer initialization is same as Query and Key vector linear layer initializations (Glorot Uniform, updated on 02/25/2026).*
 
 ### How to reach pretrained PLDR-LLMs with KV-cache and G-cache:
 
